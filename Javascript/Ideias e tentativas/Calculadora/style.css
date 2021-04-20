@@ -1,0 +1,79 @@
+.calculadora {
+    width: 400px;
+    height: 560px;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+#visor {
+    width: 80%;
+    height: 60px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0.6rem;
+    color: rgb(65, 61, 61);
+}
+
+#limpar {
+    width: 16%;
+    height: 60px;
+    background-color: rgb(250, 250, 250);
+    margin-left: 4%;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.teclado {
+    width: 73%;
+    height: 450px;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.number {
+    width: 33.33333%;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    border: darkmagenta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number ::after {
+    background-color: darkmagenta;
+}
+
+.number-0 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
