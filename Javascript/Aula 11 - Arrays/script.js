@@ -12,7 +12,6 @@ alunos.unshift('Eduardo');
 console.log(alunos);
 
 // Filtra o resultado da busca, do indíce X até o indíce Y
-console.log(alunos.slice(0, -1));
 console.log(alunos.slice(1, 3));
 
 // Remove o último elemento da lista
