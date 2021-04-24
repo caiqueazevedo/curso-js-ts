@@ -15,7 +15,14 @@ input {
     border: none;
 }
 
-input::after {
-    border: none;
+.invalid {
+    border: tomato;
     border-radius: 2rem;
+    border-style: groove;
+}
+
+.valid {
+    border: rgb(108, 255, 71);
+    border-radius: 2rem;
+    border-style: groove;
 }
