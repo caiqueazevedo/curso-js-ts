@@ -24,7 +24,6 @@ function salvarTarefas() {
         console.log(liTarefa);
         listaTarefas.push(liTarefa);
     }
-
     const tarefasJSON = JSON.stringify(listaTarefas);
     localStorage.setItem('tarefas', tarefasJSON);
 }
@@ -62,7 +61,6 @@ function apagarTarefa(value) {
         value.parentElement.remove();
         window.localStorage.removeItem(value)
     }
-
     salvarTarefas();
 }
 
@@ -81,9 +79,7 @@ function validarInput() {
 // Eventos ---------------------------------------------
 
 inputTarefa.addEventListener('keypress', (e) => {
-    if (e.keyCode === 13) {
-        validarInput();
-    }
+    if (e.keyCode === 13) validarInput();
 });
 
 btnTarefa.addEventListener('click', () => {
